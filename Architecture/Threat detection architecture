@@ -1,0 +1,30 @@
+                    AWS ACCOUNT
+                         │
+              ┌──────────▼──────────┐
+              │     CloudTrail      │
+              │   Activity Logging  │
+              └──────────┬──────────┘
+                         │
+                         │
+                AWS Environment
+                         │
+              ┌──────────▼──────────┐
+              │     GuardDuty       │
+              │  Threat Detection   │
+              └──────────┬──────────┘
+                         │
+                  Security Finding
+                         │
+              ┌──────────▼──────────┐
+              │    EventBridge      │
+              │   Event Routing     │
+              └──────────┬──────────┘
+                         │
+              ┌──────────▼──────────┐
+              │        SNS          │
+              │ Security Notification│
+              └──────────┬──────────┘
+                         │
+                         ▼
+                 Security Analyst
+                    Investigation
