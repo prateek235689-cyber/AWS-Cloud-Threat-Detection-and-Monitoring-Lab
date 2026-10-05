@@ -55,7 +55,7 @@ This configuration establishes an audit logging layer that can support security 
 
 #### Evidence
 **CloudTrail Event History**
-![CloudTrail Event History](Screenshots/CloudTrail/(1)Screenshot-of-CloudTrail-Eventhistory.png)
+![CloudTrail Event History](Screenshots/CloudTrail/(1)-Screenshot-of-CloudTrail-Eventhistory.png)
 
 **CloudTrail Trail Configuration**
 ![CloudTrail Trail Configuration](Screenshots/CloudTrail/(2)-Screenshot-of-new-CloudTrail-created.png)
