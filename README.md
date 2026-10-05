@@ -59,3 +59,18 @@ This configuration establishes an audit logging layer that can support security 
 
 **CloudTrail Trail Configuration**
 ![CloudTrail Trail Configuration](Screenshots/CloudTrail/(2)-Screenshot-of-new-CloudTrail-created.png)
+
+### 3. Amazon SNS Security Notifications:
+Amazon Simple Notification Service (SNS) was configured as the notification channel for the cloud threat-detection workflow.
+A Standard SNS topic named `GuardDuty-Security-Alerts` was created with a confirmed email subscription.
+
+Before integrating the topic with the threat-detection pipeline, notification delivery was independently validated by publishing a test message directly to the SNS topic.
+The successful test confirmed that SNS could deliver security notifications to the configured endpoint.
+
+#### Evidence:
+
+**SNS Topic and Confirmed Subscription**
+![SNS Topic](Screenshots/SNS/(1)-Screenshot-of-SNS-topicconfirmation.png)
+
+**SNS Test Notification**
+![SNS Test Notification](Screenshots/SNS/(2)-Screenshot-of-SNS-testconfirmation.png)
