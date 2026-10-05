@@ -34,3 +34,28 @@ The project will use services including **AWS CloudTrail, Amazon GuardDuty, Amaz
 - Security investigation
 - Least privilege
 - Detection and response workflow
+
+## 🔐 Security Implementation
+
+### 1. AWS CloudTrail Activity Logging:
+AWS CloudTrail was configured to provide audit visibility into AWS account activity and management API operations.
+CloudTrail Event History was reviewed to understand how AWS records account activity, including event names, event sources, timestamps, identities, regions, and affected resources.
+
+A dedicated trail named `cloud-security-monitoring-trail` was created for the security monitoring lab.
+
+The trail was configured with:
+- Management event logging enabled.
+- Read management events enabled.
+- Write management events enabled.
+- Dedicated Amazon S3 storage for CloudTrail log delivery.
+- CloudTrail log file validation enabled.
+- SNS log-delivery notifications left disabled because security alerting will be implemented separately using Amazon GuardDuty, EventBridge, and Amazon SNS.
+
+This configuration establishes an audit logging layer that can support security monitoring and incident investigation.
+
+#### Evidence
+**CloudTrail Event History**
+![CloudTrail Event History](Screenshots/CloudTrail/(1)Screenshot-of-CloudTrail-Eventhistory.png)
+
+**CloudTrail Trail Configuration**
+![CloudTrail Trail Configuration](Screenshots/CloudTrail/(2)-Screenshot-of-new-CloudTrail-created.png)
